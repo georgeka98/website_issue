@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>TechPocket</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <link href="normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <link href="blog.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'
+      https://www.facebook.com https://www.youtube.com https://fonts.googleapis.com https://cdnjs.cloudflare.com http://assets.pinterest.com;
+      script-src http://assets.pinterest.com https://connect.facebook.net 'self';
+      connect-src 'self';
+      img-src 'self';
+      style-src 'self' 'unsafe-inline';
+      object-src 'none';"> -->
+      <!-- MUST DO look up what the 'strict-dynamic' does to script-src -->
+  </head>
+  <body oncopy="return false" oncut="return false" onpaste="return false">
+    <script>
+  //if CSP is supported this will not run
+  window.onload=function(){
+      var jsNode = document.getElementById("jsNode");
+      jsNode.innerHTML = "<h3> CSP Not Supported</h3> Your browser does not support CSP, the inline script executed and replaced this div content";
+      jsNode.className = "alert alert-danger";
+  };
+    </script>
+    <div id="jsNode"></div>
+    <header>
+      <section class="top">
+        <div class="cont cont-top">
+          <span class="social">
+            <a href="https://www.facebook.com/techpocketofficial" target="_blank"></a>
+            <a href="https://twitter.com/techpocket1" target="_blank"></a>
+            <a href="https://plus.google.com/+techpocketvideo" target="_blank"></a>
+          </span>
+          <span class="join">
+            <a href="login" class="login">Log in</a>
+            <a href="signup" class="signup">Sign up</a>
+          </span>
+        </div>
+      </section>
+      <section class="header">
+        <div class="cont cont-header">
+          <div class="logo-event-sub">
+            <div class="logo-wrapper">
+              <div class="logo"></div>
+            </div>
+            <div class="header-row-group">
+              <div class="header-row">
+                <div class="header-event">asdjklfhak fhdj djfhdjfj djfhdsj jfhdas jlajfh asdlkjhdfjkasd hjkdsj fkdasjlkfdashfd sfjahj hkjshfkjl asjkf hasdlkj fhdsjklf askjf adjkf adslk djhak fhdsjk hajk llkjkjlf aljkhjkhfljkh lkfjh aljkfh sdflkjsad lf lkda fjkdasdslkahf aldksj dfhaskjl f dskf hdasjklfhasdjk hadskfdasjk fasdldfh sdakjdjfk hasdjklfdsjkf hdsjkl fsdj fajk hasdlk fhjkl dskljhf sjkldhsl sdl ffsd hsdjklfsdfa kjksa hklfh</div>
+                <div class="subscribe-form">
+                  <form action="views/includes/subscribe/index.php" class="sub-form">
+                    <div class="sub-btn-wrapper">
+                      <input type="submit" class="sub-btn" name="submit">
+                    </div>
+                    <div class="subscribe-field-wrapper">
+                      <input type="email" placeholder="Iwantto@subscribe.com" pattern="[^ @]*@[^ @]*" name="subscribe" class="subscribe-field">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar">
+            <div class="navbar-wrapper" id="navbar-wrap-toggle">
+              <a href="home" class="home">Home</a>
+              <a href="about" class="about">About</a>
+              <a href="forum" class="forum">Forum</a>
+              <a href="blog" class="blog">Blog</a>
+              <a href="youtubevideos" class="videos">Videos</a>
+              <a href="jobs" class="jobs">Jobs</a>
+              <a href="support/donate" class="donate">Donate</a>
+              <a href="more" class="more">More</a>
+              <div class="search-container">
+                <form action="/action_page.php">
+                  <div class="search-form-wrapper">
+                    <span class="search-input-wrapper">
+                      <input type="text" placeholder="Search.." name="search">
+                    </span>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="nav-mobile-btn-wrapper">
+              <button class="mobile-nav-btn" id="mobile-nav-btn"><i class="fas fa-bars"></i></button>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <div class="cont container">
+  <div class="cover">
+    <div class="cover-overlay">
+      <div class="cont container">
+        <h1 class="article-headline" id="1">title</h1>
+      </div>
+    </div>
+    <div class="cover-img" style="background-image: url('cover-1.jpg">
+    </div>
+  </div>
+
+  <div class="messege-box-overlay msg_box_cont">
+    <div class="messege-box-wrap fade__out">
+      <div class="messege-box">
+        <p>Do you really want to remove this comment? It will be gone forever!</p>
+        <div class="msg-box-btns-center">
+          <div class="msg-box-btns">
+            <button class="action__button close-msg-box">cancel</button>
+            <button class="action__submit remove-comment-final-warning" data-remove-id="">Please, remove it!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="messege-box-overlay report_submitted msg_box_cont">
+    <div class="messege-box-wrap fade__out">
+      <div class="messege-box">
+        <p>Report submitted. We are sorry you had this experience.</p>
+        <div class="msg-box-btns-center">
+          <div class="msg-box-btns">
+            <button class="action__submit close-msg-box">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="report-comment-window  msg_box_cont">
+    <div class="report-wrapper fade__out">
+      <div class="report-box">
+        <div class="report-descripction report-title">
+          <p>See something suspicious or innaproprate in this comment? Let us know!</p>
+        </div>
+        <form class="all-report-options">
+          <div class="report-opt">
+            <input type="radio" class="report-ans" id="opt-1" name="option" value="It's annoying or distasteful">
+            <label for="opt-1">It's annoying or distasteful</label>
+          </div>
+          <div class="report-opt">
+            <input type="radio" class="report-ans" id="opt-2" name="option" value="It's pornography">
+            <label for="opt-2">It's pornography</label>
+          </div>
+          <div class="report-opt">
+            <input type="radio" class="report-ans" id="opt-3" name="option" value="It goes against my views">
+            <label for="opt-3">It goes against my views</label>
+          </div>
+          <div class="report-opt">
+            <input type="radio" class="report-ans" id="opt-4" name="option" value="It advocates violence or harm to a person or animal">
+            <label for="opt-4">It advocates violence or harm to a person or animal</label>
+          </div>
+          <div class="report-opt">
+            <input type="radio" class="report-ans" id="opt-5" name="option" value="It's a fake comment">
+            <label for="opt-5">It's a fake comment</label>
+          </div>
+          <div class="report-opt">
+            <input type="radio" class="report-ans" id="opt-6" name="option" value="I think it's an unauthorized use of my intellectual property">
+            <label for="opt-6">I think it's an unauthorized use of my intellectual property</label>
+          </div>
+          <div class="report-opt">
+            <input type="radio" class="report-ans" id="opt-7" name="option" value="It shows someone harming themself or planning to harm themself">
+            <label for="opt-7">It shows someone harming themself or planning to harm themself</label>
+          </div>
+          <div class="report-opt">
+            <input type="radio" class="report-ans" id="opt-8" name="option" value="It's spam">
+            <label for="opt-8">It's spam</label>
+          </div>
+          <div class="report-opt">
+            <input type="radio" class="report-ans" id="opt-9" name="option" value="Something else">
+            <label for="opt-9">Something else</label><br>
+            <textarea id="report-something-else-textbox"></textarea>
+          </div>
+          <button type="button" class="action__button close-msg-box">cancel</button>
+          <button type="button" class="action__submit submit_comment_report" data-remove-id="">Yes, report it!</button>
+          <div class="cation-message">
+            <p>CATION: </p>
+            <p>We take reports very seriously to maintain the peace in this website. Click on the submit button only if you REALLY believe that this comment doesn't follow the rules according to our <a href="privacy#">privacy</a>. If we realise that there isn't something that doesn't obey our rules, depending on the situation, you may lose the ability to report content.</p>
+            <input type="checkbox" class="report_agreement"><p>I acknowledge this and I obey the rules</p>
+          </div>
+        </form>
+      </div>
+      <div class="report-box-message">
+        <div class="report-title">
+          <p>Note</p>
+        </div>
+        <div class="report-message-wrapper">
+          <p id="report-message"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="display: table;">
+    <div class="left-cont">
+      <div class="author-wrapper">
+        <div class="author">
+          <div class="main-info">
+            <div class="author-prof-wrapper">
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png">
+            </div>
+            <div class="personal-info">
+              <a href="1" class="full-name">full name</a>
+              <p class="description">description</p>
+            </div>
+          </div>
+          <div class="connect-with-author">
+            <p class="connect-label">Connect with George:</p>
+          </div>
+          <div class="authors-website">
+            <p class="website-label">Visit George's website:</p>
+            <a class="website-link" href="https://www.example.com">www.example.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="ver-sharing-wrap">
+        <div class="ver-sharing">
+          <ul class="share-to-soc-media">
+            <li>
+              <div class="shares-wrapper">
+                <p class="tot-shares">7</p>
+              </div>
+            </li>
+            <li>
+              <div id="fb-share-button" data-href="#" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+                <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                  <img data-pin-nopin src="soc_med_icons/facebook.png" alt="FB"/>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a class="twitter-share-button" title="Twitter" target="_blank" rel="canonical" href="https://twitter.com/intent/tweet?text=Check%20this%20article%20out%20by%20@TechPocket1&url=http://#" data-size="large">
+                <img data-pin-nopin src="soc_med_icons/twitter.png" alt="T"/>
+              </a>
+            </li>
+            <li>
+              <a class="google-share" target="_blank" title="Google+" href="https://plus.google.com/share?url=https://#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+                <img data-pin-nopin src="soc_med_icons/google+.png" alt="G+"/>
+              </a>
+            </li>
+            <li>
+              <a class="pinterest-share pinterest" data-pin-do="save" and="" data-pin-custom="true">
+                <img data-pin-nopin src="soc_med_icons/pinterest.png" alt="Pin">
+              </a>
+            </li>
+            <!-- <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+            <script type="IN/Share" data-url="blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control"></script>  -->
+            <li>
+              <a class="linkedin-share" target="_blank" title="Linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=#&title=title&summary=Check%20out%20this%20article%20by%20techpocket&source=techpocket">
+                <img data-pin-nopin src="soc_med_icons/linkedin.png" alt="LN"/>
+              </a>
+            </li>
+            <li>
+              <a class="tumblr-share" target="_blank" title="Tumblr" href="https://www.tumblr.com/widgets/share/tool/preview?posttype=photo&content=86-prof-img.png&caption=title&url=#&clickthroughUrl=#&caption=title">
+                <img data-pin-nopin src="soc_med_icons/tumblr.png" alt="Tu"/>
+              </a>
+            </li>
+            <li>
+              <!--MySpace Share button Start-->
+               <!--Created By Merelesson.com-->
+               <a href='https://myspace.com' target="_blank" onclick='window.open(&apos;https://myspace.com/post?u=&apos;+encodeURIComponent(location.href)+&apos;&amp;bodytext=&amp;tags=&amp;title=&apos;+encodeURIComponent(document.title));return false;' rel='nofollow' style='text-decoration:none;' title='Share on Myspace'>
+                 <img data-pin-nopin src="soc_med_icons/myspace.png"/>
+               </a>
+              <!--MySpace Share Button End-->
+            </li>
+            <li>
+              <a class="whatsapp-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='title%20#'">
+                <img data-pin-nopin data-pin-nopin src="soc_med_icons/whatsapp.png" alt="WhatsApp"/>
+              </a>
+            </li>
+            <li>
+              <a class="messenger-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='title%20#'">
+                <img data-pin-nopin data-pin-nopin src="soc_med_icons/messenger.png" alt="Messenger"/>
+              </a>
+            </li>
+            <!-- <li>
+              <a class="flickr-share" target="_blank" title="Flickr">
+                <img data-pin-nopin src="soc_med_icons/flickr.png" alt="Fl"/>
+              </a>
+            </li> -->
+            <!-- <li><a class="reddit-share"><img data-pin-nopin src="soc_med_icons/reddit.png" alt="Re"/></a></li> -->
+            <li>
+              <a class="email-share" target="_blank" title="email" href="mailto:?subject=title&body=Hey,%20check%20out%20this%20article%20I%20found%20on%20the%20techpocket%20website:%20http://#">
+                <img data-pin-nopin data-pin-nopin src="soc_med_icons/mail icon.png" alt="Email"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-cont">
+      <div class="teaser-paragraph-wrapper">
+        <p class="teaser-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec libero venenatis, iaculis elit vitae, aliquam quam. Morbi mi tellus, faucibus in ipsum sodales, feugiat suscipit tortor. Mauris ultricies leo ac lectus ullamcorper, ac pulvinar augue venenatis. Duis in ornare dui, eget porttitor sapien.</p>
+      </div>
+      <div class="sharing">
+        <ul class="share-to-soc-media">
+          <li>
+            <div class="shares-wrapper">
+              <p class="tot-shares">7</p>
+            </div>
+          </li>
+          <li>
+            <div id="fb-share-button" data-href="#" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+              <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                <img data-pin-nopin src="soc_med_icons/facebook.png" alt="FB"/>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a class="twitter-share-button" title="Twitter" target="_blank" rel="canonical" href="https://twitter.com/intent/tweet?text=Check%20this%20article%20out%20by%20@TechPocket1&url=http://#" data-size="large">
+              <img data-pin-nopin src="soc_med_icons/twitter.png" alt="T"/>
+            </a>
+          </li>
+          <li>
+            <a class="google-share" target="_blank" title="Google+" href="https://plus.google.com/share?url=https://#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+              <img data-pin-nopin src="soc_med_icons/google+.png" alt="G+"/>
+            </a>
+          </li>
+          <li>
+            <a class="pinterest-share pinterest" data-pin-do="save" and="" data-pin-custom="true">
+              <img data-pin-nopin src="soc_med_icons/pinterest.png" alt="Pin">
+            </a>
+          </li>
+          <!-- <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+          <script type="IN/Share" data-url="blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control"></script>  -->
+          <li>
+            <a class="linkedin-share" target="_blank" title="Linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=#&title=title&summary=Check out this article by techpocket&source=techpocket.com">
+              <img data-pin-nopin src="soc_med_icons/linkedin.png" alt="LN"/>
+            </a>
+          </li>
+          <li>
+            <a class="tumblr-share" target="_blank" title="Tumblr" href="https://www.tumblr.com/widgets/share/tool/preview?posttype=photo&content=86-prof-img.png&caption=title&url=#&clickthroughUrl=#&caption=title">
+              <img data-pin-nopin src="soc_med_icons/tumblr.png" alt="Tu"/>
+            </a>
+          </li>
+          <li>
+            <!--MySpace Share button Start-->
+             <!--Created By Merelesson.com-->
+             <a href='https://myspace.com' target="_blank" onclick='window.open(&apos;https://myspace.com/post?u=&apos;+encodeURIComponent(location.href)+&apos;&amp;bodytext=&amp;tags=&amp;title=&apos;+encodeURIComponent(document.title));return false;' rel='nofollow' style='text-decoration:none;' title='Share on Myspace'>
+               <img data-pin-nopin src="soc_med_icons/myspace.png"/>
+             </a>
+            <!--MySpace Share Button End-->
+          </li>
+          <li>
+            <a class="whatsapp-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='title%20#'">
+              <img data-pin-nopin data-pin-nopin src="soc_med_icons/whatsapp.png" alt="WhatsApp"/>
+            </a>
+          </li>
+          <li>
+            <a class="messenger-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='title%20#'">
+              <img data-pin-nopin data-pin-nopin src="soc_med_icons/messenger.png" alt="Messenger"/>
+            </a>
+          </li>
+          <!-- <li>
+            <a class="flickr-share" target="_blank" title="Flickr">
+              <img data-pin-nopin src="soc_med_icons/flickr.png" alt="Fl"/>
+            </a>
+          </li> -->
+          <!-- <li><a class="reddit-share"><img data-pin-nopin src="soc_med_icons/reddit.png" alt="Re"/></a></li> -->
+          <li>
+            <a class="email-share" target="_blank" title="email" href="mailto:?subject=title&body=Hey,%20check%20out%20this%20article%20I%20found%20on%20the%20techpocket%20website:%20http://#">
+              <img data-pin-nopin data-pin-nopin src="soc_med_icons/mail icon.png" alt="Email"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="article-meta">
+        <span class="date-posted-wrapper">
+          <span class="date-posted-icon"></span>
+          <p class="date-posted">12/2/2020</p>
+        </span>
+        <span class="read-time-wrapper">
+          <span class="book-icon"></span>
+          <p class="read-time">2 minutes;</p>
+        </span>
+      </div>
+      <div class="article-wrapper">
+        <pre class="article" data-article-id="1" style="white-space: pre-wrap; font-family: Arial">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec libero venenatis, iaculis elit vitae, aliquam quam. Morbi mi tellus, faucibus in ipsum sodales, feugiat suscipit tortor. Mauris ultricies leo ac lectus ullamcorper, ac pulvinar augue venenatis. Duis in ornare dui, eget porttitor sapien. Curabitur ac tincidunt nunc. Nunc tincidunt libero vitae ullamcorper finibus. Cras ac gravida risus. Quisque id tincidunt orci, eget rhoncus lorem. Aenean neque massa, dapibus ut pharetra quis, porta sit amet odio. Pellentesque mattis mauris eget pellentesque ultricies. Mauris bibendum turpis felis, sit amet eleifend eros tincidunt ac. Nam volutpat nisi non nisi maximus, et pretium massa ultrices. Pellentesque id convallis purus. Etiam venenatis non metus sit amet blandit. Pellentesque ullamcorper, elit sed congue imperdiet, nulla libero feugiat tortor, non facilisis mi velit vel magna. Sed sed urna quam.
+
+  Nunc non erat pellentesque sapien scelerisque sodales sit amet in sapien. Mauris rutrum quam sit amet augue mattis posuere. Aenean eu libero lacus. Aenean aliquet lorem et sem pretium faucibus. Ut quis eros interdum ex ultricies faucibus. Nam aliquet nec sapien sit amet facilisis. Curabitur eget urna nec ex fringilla sodales. Aliquam est urna, fringilla at ipsum id, finibus bibendum sem. Vestibulum at maximus nibh.
+
+  Curabitur ut nulla urna. Curabitur hendrerit tortor tortor, hendrerit varius dolor fermentum a. Praesent hendrerit ex eu purus faucibus, at malesuada mi rutrum. Nunc in quam convallis, placerat nunc ac, imperdiet tortor. Vivamus et nulla porttitor, mollis velit a, commodo ipsum. Cras eget tellus a enim molestie commodo vel in sem. Nulla quis laoreet arcu. Nunc vestibulum enim porttitor ligula auctor porta. Duis felis enim, sodales in augue viverra, pharetra condimentum mauris. Vivamus laoreet bibendum augue. Vestibulum molestie id magna et porta. Aliquam sit amet massa tincidunt, ultrices nulla quis, consequat sapien. Nullam accumsan risus non elit mattis rutrum. Praesent nec est vitae quam consectetur placerat non nec dui.
+
+  Maecenas tristique mauris eget magna luctus ullamcorper. Mauris varius, massa ut molestie tempus, ipsum neque sodales ex, sed tincidunt ex ante sit amet elit. Sed eu maximus justo. Proin nec felis non augue blandit finibus. Phasellus id elementum arcu. Sed at nisl lorem. Sed congue dictum lacus eu mattis. Vestibulum sed consectetur felis. Nam ornare ipsum ut nisi cursus, ac semper sapien dignissim. Phasellus tempor rutrum dolor eu condimentum. Maecenas bibendum lacus justo, nec feugiat urna dapibus luctus. Nullam non pulvinar justo. Suspendisse viverra nisi turpis, nec vestibulum felis efficitur et.
+
+  Suspendisse non malesuada nulla. Vivamus nec ligula eget purus ultrices tristique. Nunc mauris nibh, fermentum ac massa non, malesuada lacinia lectus. Ut hendrerit dignissim leo, ac consectetur urna pulvinar eget. Maecenas fringilla maximus tincidunt. Morbi eu ex ac arcu ultricies vulputate sed elementum nibh. Sed sodales felis eget purus maximus tincidunt. Integer bibendum elit vehicula malesuada luctus. Pellentesque eu massa ligula. Morbi vitae feugiat metus, quis scelerisque augue. Aliquam dapibus ultricies sagittis.
+        </pre>
+      </div>
+      <div class="sharing">
+        <ul class="share-to-soc-media">
+          <li>
+            <div class="shares-wrapper">
+              <p class="tot-shares">7</p>
+            </div>
+          </li>
+          <li>
+            <div id="fb-share-button" data-href="#" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+              <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                <img data-pin-nopin src="soc_med_icons/facebook.png" alt="FB"/>
+              </a>
+            </div>
+          </li>
+          <li>
+            <a class="twitter-share-button" title="Twitter" target="_blank" rel="canonical" href="https://twitter.com/intent/tweet?text=Check%20this%20article%20out%20by%20@TechPocket1&url=http://#" data-size="large">
+              <img data-pin-nopin src="soc_med_icons/twitter.png" alt="T"/>
+            </a>
+          </li>
+          <li>
+            <a class="google-share" target="_blank" title="Google+" href="https://plus.google.com/share?url=https://#" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+              <img data-pin-nopin src="soc_med_icons/google+.png" alt="G+"/>
+            </a>
+          </li>
+          <li>
+            <a class="pinterest-share pinterest" data-pin-do="save" and="" data-pin-custom="true">
+              <img data-pin-nopin src="soc_med_icons/pinterest.png" alt="Pin">
+            </a>
+          </li>
+          <!-- <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+          <script type="IN/Share" data-url="blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control"></script>  -->
+          <li>
+            <a class="linkedin-share" target="_blank" title="Linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=#&title=title&summary=Check out this article by techpocket&source=techpocket.com">
+              <img data-pin-nopin src="soc_med_icons/linkedin.png" alt="LN"/>
+            </a>
+          </li>
+          <li>
+            <a class="tumblr-share" target="_blank" title="Tumblr" href="https://www.tumblr.com/widgets/share/tool/preview?posttype=photo&content=86-prof-img.png&caption=title&url=#&clickthroughUrl=#&caption=title">
+              <img data-pin-nopin src="soc_med_icons/tumblr.png" alt="Tu"/>
+            </a>
+          </li>
+          <li>
+            <!--MySpace Share button Start-->
+             <!--Created By Merelesson.com-->
+             <a href='https://myspace.com' target="_blank" onclick='window.open(&apos;https://myspace.com/post?u=&apos;+encodeURIComponent(location.href)+&apos;&amp;bodytext=&amp;tags=&amp;title=&apos;+encodeURIComponent(document.title));return false;' rel='nofollow' style='text-decoration:none;' title='Share on Myspace'>
+               <img data-pin-nopin src="soc_med_icons/myspace.png"/>
+             </a>
+            <!--MySpace Share Button End-->
+          </li>
+          <li>
+            <a class="whatsapp-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='title%20#'">
+              <img data-pin-nopin data-pin-nopin src="soc_med_icons/whatsapp.png" alt="WhatsApp"/>
+            </a>
+          </li>
+          <li>
+            <a class="messenger-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='title%20#'">
+              <img data-pin-nopin data-pin-nopin src="soc_med_icons/messenger.png" alt="Messenger"/>
+            </a>
+          </li>
+          <!-- <li>
+            <a class="flickr-share" target="_blank" title="Flickr">
+              <img data-pin-nopin src="soc_med_icons/flickr.png" alt="Fl"/>
+            </a>
+          </li> -->
+          <!-- <li><a class="reddit-share"><img data-pin-nopin src="soc_med_icons/reddit.png" alt="Re"/></a></li> -->
+          <li>
+            <a class="email-share" target="_blank" title="email" href="mailto:?subject=title&body=Hey,%20check%20out%20this%20article%20I%20found%20on%20the%20techpocket%20website:%20http://#">
+              <img data-pin-nopin data-pin-nopin src="soc_med_icons/mail icon.png" alt="Email"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="feedback">
+        <span class="feedback-teaser">
+          <h1>Leave a feedback:</h1>
+          <p>Let the future readers and George (the author) know how this article made you feel.</p>
+          <p>You need to <a href="login">login</a> or <a href="signup">signup</a> to leave a feedback</p>
+        </span>
+          <div class="feedback-options">
+            <a class="f-love" data-feedback="love"></a>
+            <a class="f-wow" data-feedback="wow"></a>
+            <a class="f-happy" data-feedback="happy"></a>
+            <a class="f-funny" data-feedback="funny"></a>
+            <a class="f-neutral" data-feedback="neutral"></a>
+            <a class="f-sad" data-feedback="sad"></a>
+            <a class="f-angry" data-feedback="angry"></a>
+          </div>
+          <div class="feedback_cont">
+            <canvas id="feedback_results" style="background: white;">
+            </canvas>
+            <legend class="graph_memorandum" for="feedback_results"></legend>
+            <div class="feedback-tip-wrap">
+              <div class="feedback-tip">
+                <div class="arrow bottom right"></div>
+                <span class="feedback-tip-label"></span>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="right-cont">
+      <div class="hot-articles">
+        <h2>Hot Now</h2>
+        <div class="ver-article-list">
+          <div class="article-link-wrap">
+            <a class="article-link" href="blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
+              <div class="hot-article-cover-wrap">
+                <img data-pin-nopin class="hot-article-cover" src="cover-1.jpg"/>
+              </div>
+              <div class="hot-title-wrap">
+                <p class="hot-title">article</p>
+              </div>
+            </a>
+          </div>
+          <div class="article-link-wrap">
+            <a class="article-link" href="blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
+              <div class="hot-article-cover-wrap">
+                <img data-pin-nopin class="hot-article-cover" src="cover-1.jpg"/>
+              </div>
+              <div class="hot-title-wrap">
+                <p class="hot-title">article</p>
+              </div>
+            </a>
+          </div>
+          <div class="article-link-wrap">
+            <a class="article-link" href="blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
+              <div class="hot-article-cover-wrap">
+                <img data-pin-nopin class="hot-article-cover" src="cover-1.jpg"/>
+              </div>
+              <div class="hot-title-wrap">
+                <p class="hot-title">article</p>
+              </div>
+            </a>
+          </div>
+          <div class="article-link-wrap">
+            <a class="article-link" href="blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
+              <div class="hot-article-cover-wrap">
+                <img data-pin-nopin class="hot-article-cover" src="cover-1.jpg"/>
+              </div>
+              <div class="hot-title-wrap">
+                <p class="hot-title">article</p>
+              </div>
+            </a>
+          </div>
+          <div class="article-link-wrap">
+            <a class="article-link" href="blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
+              <div class="hot-article-cover-wrap">
+                <img data-pin-nopin class="hot-article-cover" src="cover-1.jpg"/>
+              </div>
+              <div class="hot-title-wrap">
+                <p class="hot-title">article</p>
+              </div>
+            </a>
+          </div>
+          <div class="article-link-wrap">
+            <a class="article-link" href="blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
+              <div class="hot-article-cover-wrap">
+                <img data-pin-nopin class="hot-article-cover" src="cover-1.jpg"/>
+              </div>
+              <div class="hot-title-wrap">
+                <p class="hot-title">article</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section about-author">
+    <div class="section-label">
+      <span class="text-label">About the Author</span>
+    </div>
+    <div class="prof-wrapper">
+      <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png">
+    </div>
+    <div class="main-info">
+      <a href="1" class="full-name">full name</a>
+      <p class="description">description</p>
+    </div>
+    <div class="connect-with-author">
+      <p class="connect-label">Connect with George:</p>
+    </div>
+    <div class="authors-website">
+      <p class="website-label">Visit George's website:</p>
+      <a class="website-link" href="https://www.example.com">www.example.com</a>
+    </div>
+  </div>
+
+  <div class="section recommended-articles">
+    <div class="section-label">
+      <span class="text-label">Recommended</span>
+    </div>
+    <div class="articles-promote news-articles-wrapper">
+      <div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section newest-articles">
+    <div class="section-label">
+      <span class="text-label">Newest</span>
+    </div>
+    <div class="articles-promote news-articles-wrapper">
+      <div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section comments">
+    <div class="section-label">
+      <span class="text-label">Comments</span>
+    </div>
+    <div class="comments-wrapper">
+      <div class="post-comment">
+          <p>You need to <a href="login">login</a> or <a href="signup">signup</a> to join the discussion</p>
+      </div>
+      <div class="comments-settings">
+        <div class="order">
+          <p class="order-par">Order:</p>
+          <ul class="comments__options__dropdown order-dropdown">
+            <li class="selected__item">
+              <button class="button__toggle" data-order="recommended"><span class="option-title">recommended</span></button>
+              <ul class="comments__options__dropdown__toggle">
+                <li class="popup__item">
+                  <button class="popup__action" data-order="newest"><span class="option-title">newest</span></button>
+                </li>
+                <li class="popup__item">
+                  <button class="popup__action" data-order="oldest"><span class="option-title">oldest</span></button>
+                </li>
+                <li class="popup__item">
+                  <button class="popup__action" data-order="recommended"><span class="option-title">recommended</span></button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="display">
+          <p class="display-par">Display:</p>
+          <ul class="comments__options__dropdown display-dropdown">
+            <li class="selected__item">
+              <button class="button__toggle" data-display="20"><span class="option-title">20</span></button>
+              <ul class="comments__options__dropdown__toggle">
+                <li class="popup__item">
+                  <button class="popup__action" data-display="5"><span class="option-title">5</span></button>
+                </li>
+                <li class="popup__item">
+                  <button class="popup__action" data-display="10"><span class="option-title">10</span></button>
+                </li>
+                <li class="popup__item">
+                  <button class="popup__action" data-display="20"><span class="option-title">20</span></button>
+                </li>
+                <li class="popup__item">
+                  <button class="popup__action" data-display="40"><span class="option-title">40</span></button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="pages">
+          <ul class="comments_pages_list">
+          </ul>
+        </div>
+      </div>
+      <div class="comments-list">
+
+      </div>
+      <div class="comments-settings">
+        <div class="pages">
+          <ul class="comments_pages_list">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section hot-now-articles">
+    <div class="section-label">
+      <span class="text-label">Hot Now</span>
+    </div>
+    <div class="articles-promote news-articles-wrapper">
+      <div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">name</p>
+                <p class="date-posted">12/3/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div><div class="column-item-cont">
+        <div class="column-item row-item">
+          <div class="item-img-cover">
+            <img data-pin-nopin class="article-item-cover" src="cover-1.jpg"/>
+          </div>
+          <div class="item-body">
+            <div class="article-item-title">
+              <p>
+                title
+              </p>
+            </div>
+            <span class="body-separator"></span>
+            <div class="article-item-author">
+              <div class="item-author-profile-pic">
+                <img data-pin-nopin data-pin-nopin class="author-prof" src="86-prof-img.png"/>
+              </div>
+              <div class="item-author-info">
+                <p class="full-name">full name</p>
+                <p class="date-posted">12/2/2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="article-item-link" href="#"></a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" async defer data-pin-hover="true" data-pin-tall="true" data-pin-lang="en" data-pin-save="true"  src="//assets.pinterest.com/js/pinit.js"></script>
+  </div>
+  </body>
+  <footer>
+  <section class="links">
+    <div class="cont cont-links">
+      <div class="links-wrapper">
+        <div class="footer-nav-wrapper">
+          <div class="footer-row">
+            <div class="footer-container">
+              <div class="link-group about">
+                <span><a href="about" class="title">About</a></span>
+                <span class="footer-link-wrapper"><a href="about/whatistechpocket" class="link-1">What is TechPocket?</a></span>
+                <span class="footer-link-wrapper"><a href="about/whoarewe" class="link-2">Who Are We</a></span>
+                <span class="footer-link-wrapper"><a href="about/team" class="link-3">Meet The Team</a></span>
+              </div>
+              <div class="link-group community">
+                <span><a href="#" class="title">community</a></span>
+                <span class="footer-link-wrapper"><a href="blog" class="link-1">Blog</a></span>
+                <span class="footer-link-wrapper"><a href="forum" class="link-2">Forum</a></span>
+                <span class="footer-link-wrapper"><a href="youtubevideos" class="link-3">TechPocket</a></span>
+              </div>
+            </div>
+            <div class="footer-container">
+              <div class="link-group support">
+                <span><a href="support" class="title">Support</a></span>
+                <span class="footer-link-wrapper"><a href="donate" class="link-1">Donate</a></span>
+                <span class="footer-link-wrapper"><a href="report" class="link-2">Report An Issue</a></span>
+              </div>
+              <div class="link-group contact-us">
+                <span><a href="contactus" class="title">Contact Us</a></span>
+                <span class="footer-link-wrapper"><a href="contactus" class="link-1">Leave A Message</a></span>
+                <span class="footer-link-wrapper"><a href="privacy" class="link-2">Privacy Policy</a></span>
+                <span class="footer-link-wrapper"><a href="terms" class="link-3">Terms Of Service</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="connect">
+          <span><a href="#" class="title">Connect With Us</a></span>
+          <div class="logo"></div>
+          <div class="brief-page-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Nullam dictum semper lorem sed sollicitudin. Nunc eleifend
+  suscipit erat, fringilla ornare justo pretium nec. Proin sit
+  amet massa nec massa pellentesque rutrum non sit amet arcu.</div>
+          <span class="title-follow-us-wrapper"><a href="#" class="title title-follow-us">Follow Us:</a></span>
+          <div class="footer-social-icons-wrapper">
+            <a href="https://www.facebook.com/techpocketofficial" target="_blank"><img data-pin-nopin src="soc_med_icons/facebook.png" alt="FB" class="fb-logo"></a>
+            <a href="https://twitter.com/techpocket1" target="_blank"><img data-pin-nopin src="soc_med_icons/twitter.png" alt="Twitter" class="twitter-logo"></a>
+            <a href="https://plus.google.com/+techpocketvideo" target="_blank"><img data-pin-nopin src="soc_med_icons/google+.png" alt="Google+" class="google-logo"></a>
+          </div>
+          <div class="social"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="subscribe">
+    <div class="cont cont-subscribe">
+      <h2 class="sub-title">Subscribe</h2>
+      <p class="sub-teaser">Be the first to see our latest updtes and news!</p>
+      <div class="subscribe-form-wrapper">
+        <div class="subscribe-form">
+          <form action="views/includes/subscribe/index.php" class="sub-form">
+            <div class="sub-btn-wrapper">
+              <input type="submit" class="sub-btn" name="submit">
+            </div>
+            <div class="subscribe-field-wrapper">
+              <input type="email" placeholder="Iwantto@subscribe.com" pattern="[^ @]*@[^ @]*" name="subscribe" class="subscribe-field">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  <footer>
+    <section class="copyright">
+      <div class="cont cont-copyright">
+        <p class="made-by">This website was made by <a href="http://www.georgekarabassis.com" class="website-dev-name" target="_blank">George Karabassis</a></p>
+        <p class="copyright-statement">© Copyright 2018 | All rights reserved</p>
+      </div>
+    </section>
+  </footer>
+  </body>
+  <script src="main.js"></script>
+  <script src="blog.js"></script>
+</html>
